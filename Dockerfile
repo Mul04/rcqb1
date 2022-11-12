@@ -1,7 +1,6 @@
 FROM ubuntu
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt update; apt upgrade -y
-ENV PORT=8880
 RUN apt install curl wget golang zip unzip nginx -y
 COPY scriptplusconf /scriptplusconf
 COPY qBconf.tar.gz /qBconf.tar.gz
